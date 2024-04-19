@@ -5,7 +5,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="INVENTORY")
+@Table(name = "INVENTORY")
 public class Inventory extends PanacheEntity {
+
+    public String itemId;
     public int quantity;
+
 }
