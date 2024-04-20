@@ -13,7 +13,7 @@ public class Product implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    private String id;
+    private String itemId;
     private String name;
     private String description;
     private double price;
@@ -21,12 +21,12 @@ public class Product implements Serializable {
     public Product() {
     }
 
-    public String getId() {
-        return id;
+    public String getItemId() {
+        return itemId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setItemId(String itemId) {
+        this.itemId = itemId;
     }
 
     public String getName() {
@@ -55,6 +55,6 @@ public class Product implements Serializable {
 
     @Override
     public String toString() {
-        return "Product [id=" + id + ", name=" + name + ", price=" + price + "]";
+        return "Product [itemId=" + itemId + ", name=" + name + ", price=" + price + "]";
     }
 }
